@@ -71,6 +71,8 @@ class Kindle:
             print("\nInvalid option. Try again.")
             self.read_book()
         else:
+            print("Opening book in web browser...")
+            sleep(1)
             webbrowser.open(self.ownedBooks[choice - 1].url, new=2)
 
 
