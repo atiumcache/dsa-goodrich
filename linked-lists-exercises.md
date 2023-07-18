@@ -11,3 +11,15 @@ A recursive algorithm that counts the number of nodes in a SLL:
 - If Node.next = None, return 1. 
 - Else, return 1 + count(Node.next) 
 
+To swap two nodes, x and y, in a SLL *L*, given references only to x and y: 
+- temp = x.next
+- x.next = y.next 
+- y.next = temp
+
+To swap two nodes, x and y, in a DLL *L*, given references only to x and y: 
+- temp = x.next
+- x.next = y.next
+- y.next = temp
+- temp = x.prev
+- x.prev = y.prev
+- y.prev = temp
